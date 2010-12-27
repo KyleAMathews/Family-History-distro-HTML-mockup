@@ -27,12 +27,12 @@
 
   <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
 
   <!-- CSS : implied media="all" -->
+  <link rel="stylesheet" href="css/960.css">
   <link rel="stylesheet" href="css/style.css?v=2">
   <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/custom.css?v=2">
 
   <!-- Uncomment if you are specifically targeting less enabled mobile browsers
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
@@ -44,13 +44,29 @@
 
 <body>
 
-  <div id="container">
+  <div id="container" class="container_12">
     <header>
-
+	<div style="width:960px;background-color: #f2f2f2;height:35px;">
+	      <ul id="nav" class="">
+		<li style="margin-right: 50px;"><a href="#">Mathews Family</a></li>
+		<li><a href="#">People</a></li>
+		<li><a href="#">Pictures</a></li>
+		<li><a href="#">Other Content <span font-size: 80%;>▼</span></a></li>
+	      </ul>
+	<form method="GET" action="/search" id="search-form" style="float:right; margin-right:15px;">
+		<input type="text" id="search-query" name="q" placeholder="Search" value="">
+	</form>
+	</div>
     </header>
     
-    <div id="main" role="main">
-    <h1>I'm in the main div.</h1>
+    <div id="main" role="main" style="clear:both;">
+      <h1>I'm in the main div.</h1>
+      <div class="grid_8">
+        <h2>What this site is all about</h2>
+      </div>
+      <div class="grid_4">
+        <h2>Top surnames on this site</h2>
+      </div>
     </div>
     
     <footer>
