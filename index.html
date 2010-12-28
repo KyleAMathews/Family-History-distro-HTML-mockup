@@ -34,7 +34,7 @@
   <link rel="stylesheet" href="css/typography.css">
   <link rel="stylesheet" href="css/custom.css?v=2">
 
-  <!-- Uncomment if you are specifically targeting less enabled mobile browsers
+   <!-- Uncomment if you are specifically targeting less enabled mobile browsers
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
  
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
@@ -46,25 +46,27 @@
 
   <div id="container" class="container_12">
     <header>
-	<div style="width:960px;background-color: #f2f2f2;height:35px;">
+	<div style="width:960px;background-color: #f2f2f2;height:35px; border-bottom-left-radius:5px;border-bottom-right-radius:5px;">
+	      <a style="float:left;margin-right:50px;text-decoration:none;" href="#">Mathews Family</a>
+	      <form method="GET" action="/search" id="search-form" style="float:left; margin-right:15px;">
+       		<input type="text" id="search-query" name="q" placeholder="Search" value="" size=30 style="font-size:120%">
+       	</form>
 	      <ul id="nav" class="">
-		<li style="margin-right: 50px;"><a href="#">Mathews Family</a></li>
-		<li><a href="#">People</a></li>
-		<li><a href="#">Pictures</a></li>
-		<li><a href="#">Other Content <span font-size: 80%;>▼</span></a></li>
+		      <li><a href="#">People</a></li>
+       		<li><a href="#">Pictures</a></li>
+      		<li><a href="#">FAQ</a></li><!--- also perhaps add a forum + way to upload content -->
+      		<li><a href="#">Other Content <span font-size: 80%;>▼</span></a></li>
 	      </ul>
-	<form method="GET" action="/search" id="search-form" style="float:right; margin-right:15px;">
-		<input type="text" id="search-query" name="q" placeholder="Search" value="">
-	</form>
 	</div>
     </header>
     
     <div id="main" role="main" style="clear:both;">
+      <div class="breadcrumb grid_12" style="margin-bottom:30px"><a>home</a></div>
       <div class="grid_8" style="border-radius:10px;border:2px solid #031A2B; margin-right:6px;background:#E4EEF6;margin-bottom:15px;">
         <h2 style="padding:10px 10px 0 10px">What this site is all about</h2>
-        <p style="padding:10px;">Once upon a time Ben, Joel, and Kyle Mathews (brothers 3) started a family history website. All was lovely for many a year collecting stories, pictures, etc. and putting them on the web.
+        <p style="padding:0 10px;">Once upon a time Ben, Joel, and Kyle Mathews (brothers 3) started a family history website. All was lovely for many a year collecting stories, pictures, etc. and putting them on the web.
         </p>
-        <p style="padding:10px;">We grew dissatisfied with said website and decided to rebuild it on the Drupal 7. David Landry (a cousin) joined in on the effort. People rejoiced</p>
+        <p style="padding:0 10px;">We grew dissatisfied with said website and decided to rebuild it on the Drupal 7. David Landry (a cousin) joined in on the effort. People rejoiced</p>
       </div>
       <div class="grid_4" style="border-radius:10px;border:2px solid #031A2B; margin-right:6px;background:#E4EEF6;">
         <h2 style="padding:10px 10px 0 10px">Top surnames on this site</h2>
@@ -80,25 +82,37 @@
       <div class="grid_8">
         <div>
           <h2>George Black (B. 1821, D. 1897)</h2>
-          <div style="border:1px solid black; width:100px; height:100px;float:left;margin-right:10px;"></div>
+          <img src="images/george_black.jpg" style="width:100px; height:100px;float:left;margin-right:10px;" />
           <ul style="padding-left:130px;">
             <li><a>Link to a piece of content</a></li>
             <li><a>Link to a piece of content</a></li>
             <li><a>Link to a piece of content</a></li>
           </ul>
-          <button type="submit">View profile</button>
+          <button style="margin-left:20px;" type="submit">View profile</button>
         </div>
         <br />
         <hr />
         <div>
           <h2>Thomas Carthwright Mathews (B. 1786, D. 1862)</h2>
-          <div style="border:1px solid black; width:100px; height:100px;float:left;margin-right:10px;"></div>
+          <img src="images/t_c.jpg" style="width:100px; height:100px;float:left;margin-right:10px;" />
           <ul style="padding-left:130px;">
             <li><a>Link to a piece of content</a></li>
             <li><a>Link to a piece of content</a></li>
             <li><a>Link to a piece of content</a></li>
           </ul>
-          <button type="submit">View profile</button>
+          <button style="margin-left:20px;" type="submit">View profile</button>
+        </div>
+        <br />
+        <hr />
+        <div>
+          <h2>Margret Stalle (B. 1834, D. 1897)</h2>
+          <img src="images/margret_stalle.jpg" style="width:100px; height:100px;float:left;margin-right:10px;" />
+          <ul style="padding-left:130px;">
+            <li><a>Link to a piece of content</a></li>
+            <li><a>Link to a piece of content</a></li>
+            <li><a>Link to a piece of content</a></li>
+          </ul>
+          <button style="margin-left:20px;" type="submit">View profile</button>
         </div>
         <br />
         <hr />
