@@ -25,7 +25,6 @@ hr {
 }
 h1 {
   font-family: 'IM Fell DW Pica', serif;
-  font-size: 48px;
   font-style: normal;
   font-weight: 400;
   text-shadow: none;
@@ -33,5 +32,4 @@ h1 {
   text-transform: none;
   letter-spacing: 0em;
   word-spacing: 0em;
-  line-height: 1em;
 }
